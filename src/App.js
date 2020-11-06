@@ -49,8 +49,16 @@ function App() {
   }, []);
 
   function create() {
+    if (product_id == '') {
+      alert('Please set product ID first!, order creation failed')
+      return
+    }
     api.post(`orders`, {
       ...orderJson,
+      line_items: [{
+        product_id,
+        quantity: 1
+      }],
       status: 'pending',
     })
     .then(({ data }) => {
