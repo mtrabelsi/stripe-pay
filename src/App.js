@@ -40,7 +40,7 @@ const stripePromise = loadStripe('pk_test_51HSKZoBZi1wOhcXhbVWFThaBybcIneFqXogqr
 function App() {
   const [order, setorder] = useState(null);
   const [orders, setorders] = useState([]);
-
+  const [product_id, setProductId] = useState('')
  useEffect(() => {
    api.get(`orders`)
       .then(({ data }) => {
@@ -63,6 +63,9 @@ function App() {
         <Elements stripe={stripePromise}>
           <CheckoutForm />
         </Elements>
+      </section>
+      <section>
+        <input name="pid" type="text" value={product_id} onChange={e => setProductId(e.target.value)}/>
       </section>
 
       <section className="section">
