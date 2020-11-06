@@ -73,7 +73,7 @@ function App() {
         </Elements>
       </section>
       <section>
-        <input name="pid" type="text" value={product_id} onChange={e => setProductId(e.target.value)}/>
+       product id : <input name="pid" type="text" value={product_id} onChange={e => setProductId(e.target.value)}/>
       </section>
 
       <section className="section">
