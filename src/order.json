@@ -11,7 +11,7 @@
       "state": "CA",
       "postcode": "94103",
       "country": "US",
-      "email": "john.doe@example.com",
+      "email": "marwen@example.com",
       "phone": "(555) 555-5555"
     },
     "shipping": {
@@ -26,12 +26,8 @@
     },
     "line_items": [
       {
-        "product_id": 15,
+        "product_id": 5367,
         "quantity": 1
-      },
-      {
-        "product_id": 16,
-        "quantity": 2
       }
     ],
     "shipping_lines": [

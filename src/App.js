@@ -34,7 +34,7 @@ const CheckoutForm = () => {
 };
 
 
-const stripePromise = loadStripe('your-test-public-key');
+const stripePromise = loadStripe('pk_test_51HSKZoBZi1wOhcXhbVWFThaBybcIneFqXogqrlLALTjWXJAMK8xd34XZ8ubmjAgAtFzrbLdbJ4fIhhBDD15ymPnB00Fh7Lotm3');
 
 
 function App() {
