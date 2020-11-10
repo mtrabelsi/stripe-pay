@@ -13,14 +13,11 @@ const CheckoutForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const {error, paymentMethod} = await stripe.createPaymentMethod({
-      type: 'card',
-      card: elements.getElement(CardElement),
-    });
+    const { error, token } = await stripe.createToken(elements.getElement(CardElement));
     if(error) {
       return console.error(error)
     } 
-    console.log(paymentMethod)
+    console.log(token)
   };
 
   return (
