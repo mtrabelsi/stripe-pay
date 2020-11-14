@@ -11,8 +11,8 @@ export const getAuthHeaders = async () => {
 }
 
 export const api = new WooCommerceRestApi({
-  url: `https://open-prox.herokuapp.com/https://meat2door.co.uk`,
-  consumerKey: "ck_bd578813ea5024895fc5e7cfe66d8c76d9702d21",
-  consumerSecret: "cs_02ccea1bc420f798a461f40a6a98a7ba0972fa83",
+  url: `https://open-prox.herokuapp.com/http://209.182.233.89`,
+  consumerKey: 'ck_205d47088af185a171f128821d9a19e154fa678e',
+  consumerSecret: 'cs_ef4e5c2fe53c83ffaa1930dfe75595ea1113c3c9',
   version: "wc/v3"
 });

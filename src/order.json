@@ -26,8 +26,12 @@
     },
     "line_items": [
       {
-        "product_id": 5367,
+        "product_id": 1441,
         "quantity": 1
+      },
+      {
+        "product_id": 1483,
+        "quantity": 2
       }
     ],
     "shipping_lines": [
